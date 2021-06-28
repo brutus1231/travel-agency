@@ -1,9 +1,16 @@
 package pl.sda.travelagency.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 
 @Entity
-@Table("HOTEL")
+@Table(name = "HOTEL")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
 public class HotelEntity {
 
     @Id
