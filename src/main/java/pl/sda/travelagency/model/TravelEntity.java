@@ -12,7 +12,7 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Travel {
+public class TravelEntity {
 
     @Id
     @GeneratedValue
