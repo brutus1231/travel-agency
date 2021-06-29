@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = TravelAgencyApplication.class)
-class HotelServiceTest {
+class HotelServiceIT {
 
     @Autowired
     HotelService hotelService;
