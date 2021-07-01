@@ -22,4 +22,8 @@ public class HotelEntity {
 
     @Column
     private String name;
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
