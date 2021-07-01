@@ -35,6 +35,6 @@ class CityRepositoryIT {
 
         CountryEntity savedCountry = countryRepository.save(countryEntity);
 
-        cityRepository.save(CityEntity.builder().country(savedCountry).build());
+        cityRepository.save(CityEntity.builder().name("Warszawa").country(savedCountry).build());
     }
 }
