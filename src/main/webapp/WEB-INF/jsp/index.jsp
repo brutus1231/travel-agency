@@ -11,7 +11,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="icon" href="../../resources/images/favicon.ico">
     <link rel="shortcut icon" href="../../resources/images/favicon.ico" />
-    <link rel="stylesheet" href="../../resources/css/booking.css">
+    <link rel="stylesheet" href="../../resources/booking/css/booking.css">
     <link rel="stylesheet" href="../../resources/css/camera.css">
     <link rel="stylesheet" href="../../resources/css/owl.carousel.css">
     <link rel="stylesheet" href="../../resources/css/style.css">
@@ -27,6 +27,12 @@
     <script src="../../resources/js/camera.js"></script>
     <!--[if (gt IE 9)|!(IE)]><!-->
     <script src="../../resources/js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script src="../../resources/booking/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="../../resources/booking/js/jquery.fancyform.js"></script>
+    <script src="../../resources/booking/js/jquery.placeholder.js"></script>
+    <script src="../../resources/booking/js/regula.js"></script>
+    <script src="../../resources/booking/js/booking.js"></script>
     <script>
 			$(document).ready(function(){
 			jQuery('#camera_wrap').camera({
@@ -313,4 +319,3 @@
 		</script>
 </body>
 </html>
-

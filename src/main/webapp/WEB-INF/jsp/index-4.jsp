@@ -22,6 +22,11 @@
 		<script src="../../resources/js/jquery.equalheights.js"></script>
 		<script src="../../resources/js/jquery.mobilemenu.js"></script>
 		<script src="../../resources/js/jquery.easing.1.3.js"></script>
+		<script src="../../resources/booking/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="../../resources/booking/js/jquery.fancyform.js"></script>
+		<script src="../../resources/booking/js/jquery.placeholder.js"></script>
+		<script src="../../resources/booking/js/regula.js"></script>
+		<script src="../../resources/booking/js/booking.js"></script>
 		<script>
 		$(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });

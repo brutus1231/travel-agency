@@ -1,4 +1,12 @@
 
+ul.list1 li .drop, .socials a {
+	behavior: url(js/PIE.htc);
+	position: relative;
+}
+
+
+
+
 .socials a {
 	margin-right: 9px;
 }
