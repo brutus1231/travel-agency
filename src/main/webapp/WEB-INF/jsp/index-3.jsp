@@ -53,8 +53,7 @@
 								<li><a href="index">ABOUT</a></li>
 								<li><a href="index-1">HOT TOURS</a></li>
 								<li><a href="index-2">SPECIAL OFFERS</a></li>
-								<li class="current"><a href="index-3">BLOG</a></li>
-								<li><a href="index-4">CONTACTS</a></li>
+								<li class="current"><a href="index-4">CONTACTS</a></li>
 								<li><a href="register">SIGN UP</a></li>
 							</ul>
 						</nav>
