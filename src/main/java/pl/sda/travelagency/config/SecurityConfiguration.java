@@ -27,12 +27,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 //        auth.inMemoryAuthentication().withUser("dba").password("{noop}dba").roles("DBA");
 
         auth.jdbcAuthentication()
-                .usersByUsernameQuery("SELECT u.username, u.password,1 FROM user u WHERE u.username=?")
-                .authoritiesByUsernameQuery("SELECT u.username, r.name, 1 " +
+                .usersByUsernameQuery("SELECT u.email, u.password,1 FROM user u WHERE u.email=?")
+                .authoritiesByUsernameQuery("SELECT u.email, r.name, 1 " +
                         "FROM user u " +
-                        "INNER JOIN user_role ur ON ur.user_id = u.user_id " +
+                        "INNER JOIN user_role ur ON ur.user_id = u.id " +
                         "INNER JOIN role r ON r.role_id = ur.role_id " +
-                        "WHERE u.username=?")
+                        "WHERE u.email=?")
                 .dataSource(dataSource);
 
     }
