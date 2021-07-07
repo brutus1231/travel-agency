@@ -1,5 +1,6 @@
 package pl.sda.travelagency.service;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -17,19 +18,13 @@ import java.util.Date;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class UserBoImpl {
 
-    @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
-    private RoleRepository roleRepository;
-
-    @Autowired
-    private BCryptPasswordEncoder encoder;
-
-    @Autowired
-    private AuthorizationUtil authorizationUtil;
+    private final UserRepository userRepository;
+    private final RoleRepository roleRepository;
+    private final BCryptPasswordEncoder encoder;
+    private final AuthorizationUtil authorizationUtil;
 
     public void saveUser(UserDto dto) {
         UserEntity user = new UserEntity();
