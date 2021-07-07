@@ -105,17 +105,20 @@
 </div>
 <!--==============================Content=================================-->
 <div class="content">
-     <div class="registrationTitle" >Rejestracja</div>
-
-    <form action="/register" modelAttribute="user" method="post">
-        <input id="email" type="text" name="email" class="myTextButton" placeholder="email"/>
-        <input id="password" type="password" name="password" placeholder="hasło"/>
-        <input id="confirmedPassword" type="password" name="confirmedPassword" placeholder="hasło"/>
-        <input id="city" type="password" name="confirmedPassword" placeholder="hasło"/>
-        <input id="address" type="password" name="confirmedPassword" placeholder="hasło"/>
-        <input type="submit" value="Zapisz" name="saveButton" class="mySubmitButton">
-    </form>
+    <div  style="height: 150px !important;width: 100%;">
+    </div>
+    <div>
+        <form action="/register" modelAttribute="user" method="post">
+            <input id="email" type="text" name="email" class="myTextButton" placeholder="email"/>
+            <input id="password" type="password" name="password" placeholder="hasło"/>
+            <input id="confirmedPassword" type="password" name="confirmedPassword" placeholder="hasło"/>
+            <input id="city" type="text" name="city" placeholder="city"/>
+            <input id="address" type="text" name="address" placeholder="address"/>
+            <input type="submit" value="Zapisz" name="saveButton" class="mySubmitButton">
+        </form>
+    </div>
 </div>
+
 <!--==============================footer=================================-->
 <footer>
     <div class="container_12">

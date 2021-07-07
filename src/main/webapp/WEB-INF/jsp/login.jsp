@@ -104,16 +104,16 @@
     </div>
 </div>
 <!--==============================Content=================================-->
-<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
-    <div class="grid_12">
-        <div id="formContent">
-            <div class="loginTitle" >Logowanie</div>
-            <form action="/appLogin" method="post">
-                <input type="text" id="username" class="myTextButton first" name="username" placeholder="email">
-                <input type="password" id="pass" class="myPasswordButton second" name="pass" placeholder="hasło">
-                <input type="submit" value="Zaloguj" class="mySubmitButton">
-            </form>
-        </div>
+<div class="content">
+    <div  style="height: 150px !important;width: 100%;">
+    </div>
+    <div id="formContent">
+        <div class="loginTitle" >Logowanie</div>
+        <form action="/appLogin" method="post">
+            <input type="text" id="username" class="myTextButton first" name="username" placeholder="email">
+            <input type="password" id="pass" class="myPasswordButton second" name="pass" placeholder="hasło">
+            <input type="submit" value="Zaloguj" class="mySubmitButton">
+        </form>
     </div>
 </div>
 <!--==============================footer=================================-->
