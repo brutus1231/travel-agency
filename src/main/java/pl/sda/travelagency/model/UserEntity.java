@@ -55,6 +55,12 @@ public class UserEntity {
     @Temporal(TemporalType.DATE)
     private Date createDate;
 
+    @Column
+    private boolean active;
+
+    @Column
+    private String activationId;
+
     @OneToMany(mappedBy="user")
     private List<TravelParticipantEntity> participants;
 

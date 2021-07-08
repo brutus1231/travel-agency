@@ -16,6 +16,7 @@ import pl.sda.travelagency.util.AuthorizationUtil;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -25,6 +26,7 @@ public class UserBoImpl {
     private final RoleRepository roleRepository;
     private final BCryptPasswordEncoder encoder;
     private final AuthorizationUtil authorizationUtil;
+    private final MessageService messageService;
 
     public void saveUser(UserDto dto) {
         UserEntity user = new UserEntity();
@@ -39,7 +41,10 @@ public class UserBoImpl {
         roles.add(roleRepository.findByName("USER"));
         user.setRoles(roles);
 
+        String activationId = UUID.randomUUID().toString();
+        user.setActivationId(activationId);
         userRepository.save(user);
+        messageService.sendEmail(dto.getEmail(), "Rejestracja w systemie", "W celu aktywacji kliknij http://localhost:9001/activation/" + activationId);
     }
 
     public void updateUser(UserDto dto) {
@@ -57,5 +62,11 @@ public class UserBoImpl {
 
     public UserEntity getCurrentUser() {
         return userRepository.findByEmail(authorizationUtil.getUsername()).get();
+    }
+
+    public void activate(String activationId) {
+        UserEntity user = userRepository.findFirstByActivationId(activationId);
+        user.setActive(true);
+        userRepository.save(user);
     }
 }
